@@ -6,6 +6,6 @@
 <template>
     <h1>About</h1>
     <span class="fas fa-ad"></span>
-    <p>{{ description }}</p>
+    <p>{{ description }}</p> 
 </template>
     
