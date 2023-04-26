@@ -1,6 +1,6 @@
 <script setup>
     import { defineProps } from 'vue';
-    const props = defineProps(        description: String,
+    const props = defineProps(          
     });
 
 </script>
@@ -10,7 +10,6 @@
     <h1>About</h1>
 
     <span class="fas fa-ad"></span>
-    <p>{{ description }}</p>
-ad"></span>
+"></span>
 </template>
     
