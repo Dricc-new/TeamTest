@@ -4,9 +4,8 @@
     });
 </script>
 <template>
-    <h1>About</h1>
-    <span class="fas fa-ad"></span>
+    <h1 class="text-9x1"> About </h1>
+    <span class="text-sm fas fa-ad "></span>
     <p>{{ description }}</p> 
-    gf
 </template>
     
