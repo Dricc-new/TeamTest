@@ -12,6 +12,7 @@
     <hr class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
     <p class="text-bold p-4 m-4 place-content-evenly text-justify">{{ description }}</p>
     <hr>
+    <h4 class="text-sm m-4" v-if="listItem.length">Catidad de parrafos {{ listItem.length }}</h4>
     <div class="ATable m-4 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2">
         <h1 class="uppercase col-span-full text-center font-bold p-2 border-b border-stone-600">Lista de elementos</h1>
         <p v-for="item in listItem">
