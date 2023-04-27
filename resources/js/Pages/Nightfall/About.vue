@@ -2,6 +2,10 @@
     const props = defineProps({
         description: String,
     });
+
+/*     const data = [
+        {text},
+    ]; */
 </script>
 <template>
     <div class="m-4">
@@ -11,7 +15,7 @@
     <hr class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
     <p class="text-bold p-4 m-4 place-content-evenly text-justify">{{ description }}</p>
     <hr>
-    <div class="m-4 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2">
+    <div class="ATable m-4 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2">
         <h1 class="uppercase col-span-full text-center font-bold p-2 border-b border-stone-600">Lista de elementos</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa amet ab iusto voluptatem distinctio illum deserunt est maiores odio qui error, sunt cum labore fuga, animi temporibus sapiente vero?</p>
         <p>Numquam consectetur cupiditate sapiente incidunt recusandae omnis non rem aliquam ipsum dolorum reiciendis sed, vitae molestiae. Numquam sapiente dolorem corrupti unde provident quasi ipsam, quae commodi quidem ex placeat quos!</p>
@@ -37,7 +41,7 @@
 
 </template>
 <style>
-    p{
+    .ATable p{
         @apply cursor-pointer hover:-translate-y-1 text-stone-400 text-justify border p-2 rounded bg-stone-900;
     }
 </style>
