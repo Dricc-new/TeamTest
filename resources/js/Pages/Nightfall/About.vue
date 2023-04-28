@@ -1,5 +1,6 @@
 <script setup>
 import ListaParagraph from './ListParagraph.vue';
+import Button from '@/Components/PrimaryButton.vue'
 import { ref } from 'vue';
 
 const props = defineProps({
@@ -34,9 +35,9 @@ function CambiarIdioma(str) {
     <button class="cursor-pointer bg-green-600 p-2 rounded m-4 text-white" @click="CambiarIdioma('en')">
         Cambiar Idioma a Ingles
     </button>
+    <Button>PrimaryButton</Button>
     <h4 class="text-sm m-4" v-if="listItem.length">Catidad de parrafos {{ listItem.length }}</h4>
     <ListaParagraph :list="listItem">
-
     </ListaParagraph>
 </template>
 
