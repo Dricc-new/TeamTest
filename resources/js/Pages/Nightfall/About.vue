@@ -35,7 +35,8 @@ function CambiarIdioma(str) {
     <button class="cursor-pointer bg-green-600 p-2 rounded m-4 text-white" @click="CambiarIdioma('en')">
         Cambiar Idioma a Ingles
     </button>
-    <Button>PrimaryButton</Button>
+    <Button class="m-2" >PrimaryButton1</Button>
+    <Button class="m-2" color="green">PrimaryButton2</Button>
     <h4 class="text-sm m-4" v-if="listItem.length">Catidad de parrafos {{ listItem.length }}</h4>
     <ListaParagraph :list="listItem">
     </ListaParagraph>
