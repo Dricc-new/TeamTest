@@ -9,68 +9,60 @@
 
     <div class="bg-gray-400 m-4">
         <div class="DTable bg-gray-100 m-4">
-            <div class="px-[2rem] pt-[1.25rem] pb-[1rem]">
-                <h2 class="text-2xl DFont">
-                    Query Analyticla
-                </h2>
-
-            </div>
-            <div>
-                
-                <table class="h-screen w-full table-auto">
-                    <thead class="text-left bg-gray-900 p-10 DColorHeader">
-                        <tr class="py-10">
-                            <th class="DColorBorder border-r-2 border-solid p-4">
-                                QUERY
-                            </th>
-                            <th class="DColorBorder border-r-2 border-solid p-4">
-                                CLICKS
-                            </th>
-                            <th class="DColorBorder border-r-2 border-solid p-4">
-                                IMPRESS
-                            </th>
-                            <th class="DColorBorder border-r-2 border-solid p-4">
-                                CTR
-                            </th>
-                            <th class="DColorBorder border-r-2 border-solid">
-                                SEO CAMPAIGN
-                            </th>
-                        </tr>
-
-                    </thead>
-                    <tbody class="p-4">
-                        <tr>
-                            <td>tools for seo specialits</td>
-                            <td>235</td>
-                            <td>1200</td>
-                            <td>16.5%</td>
-                            <td>ADD</td>
-                        </tr>
-                        <tr>
-                            <td>best seo tools</td>
-                            <td>217</td>
-                            <td>950</td>
-                            <td>18.2%</td>
-                            <td>ADD</td>
-                        </tr>
-                        <tr>
-                            <td>seo competitors</td>
-                            <td>197</td>
-                            <td>603</td>
-                            <td>14.1%</td>
-                            <td>ADD</td>
-                        </tr>
-                        <tr>
-                            <td>comprehensive seo tools</td>
-                            <td>130</td>
-                            <td>548</td>
-                            <td>19.8%</td>
-                            <td>ADD</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
+            <h2 class="text-2xl DFont p-4">
+                Query Analyticla
+            </h2>                
+            <table class="h-screen w-full table-auto">
+                <thead class="text-left bg-gray-900 p-10 DColorHeader">
+                    <tr>
+                        <th class="DColorBorder border-r py-2">
+                            <h2>QUERY</h2>
+                        </th>
+                        <th class="DColorBorder border-r py-2">
+                            <h2> CLICKS</h2>
+                        </th>
+                        <th class="DColorBorder border-r py-2">
+                            <h2>IMPRESS</h2>
+                        </th>
+                        <th class="DColorBorder border-r py-2">
+                            <h2>CTR</h2>
+                        </th>
+                        <th class="py-2">
+                            <h2 class="">SEO CAMPAIGN</h2>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="p-4">
+                    <tr>
+                        <td>tools for seo specialits</td>
+                        <td>235</td>
+                        <td>1200</td>
+                        <td>16.5%</td>
+                        <td>ADD</td>
+                    </tr>
+                    <tr>
+                        <td>best seo tools</td>
+                        <td>217</td>
+                        <td>950</td>
+                        <td>18.2%</td>
+                        <td>ADD</td>
+                    </tr>
+                    <tr>
+                        <td>seo competitors</td>
+                        <td>197</td>
+                        <td>603</td>
+                        <td>14.1%</td>
+                        <td>ADD</td>
+                    </tr>
+                    <tr>
+                        <td>comprehensive seo tools</td>
+                        <td>130</td>
+                        <td>548</td>
+                        <td>19.8%</td>
+                        <td>ADD</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -78,7 +70,15 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
     .DTable{
+        
+    }
 
+    .DTable table thead th h2{
+        @apply border-l border-gray-500 w-full my-2 text-center;
+    }
+
+    .DTable table thead th:first-child h2{
+        @apply border-l-0;
     }
     .DFont{
         font-family: 'Quicksand', sans-serif;
@@ -86,10 +86,10 @@
     .DColorHeader{
         background-color: #e2e8f0;
     }
-    .DColorBorder{
+/*     .DColorBorder{
         border-color: #cbd5e1;
         border-spacing: 10px;
-    }
+    } */
 </style>
 <!-- 
     <div class="DTable lg:col-span-3">
