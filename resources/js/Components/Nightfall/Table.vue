@@ -1,20 +1,35 @@
 <script setup>
+    import Button2 from '@/Components/Nightfall/Button2.vue'
     const props = defineProps({
         list: Object,   
         
     });
+
+
+    const listtable = [
+        {text:' temporibus sapiente vero?', text2:'loremsadaf', text3: 'loremsadaf', text4:'loremsadaf'},
+        {text:'  ex placeat quos!', text2:'loremsadaf', text3: 'loremsadaf', text4:'loremsadaf'},
+        {text:'in rem harum. Praesentium, a.', text2:'loremsadaf', text3: 'loremsadaf', text4:'loremsadaf'},
+        {text:'Ex, reiciendis?', text2:'loremsadaf', text3: 'loremsadaf', text4:'loremsadaf'},
+        {text:' nesciunt laudantium?', text2:'loremsadaf', text3: 'loremsadaf', text4:'loremsadaf'},
+        {text:'  voluptatem possimus.', text2:'loremsadaf', text3: 'loremsadaf', text4:'loremsadaf'},
+        {text:'usandae quia itaque!', text2:'loremsadaf', text3: 'loremsadaf', text4:'loremsadaf'},
+        {text:' vel debitis!', text2:'loremsadaf', text3: 'loremsadaf', text4:'loremsadaf'},
+        {text:' placeat nemo culpa at?', text2:'loremsadaf', text3: 'loremsadaf', text4:'loremsadaf'},
+    ];
+
 </script>
 
 <template>
 
     <div class="bg-gray-400 m-4">
-        <div class="DTable bg-gray-100 m-4">
+        <div class="DTable bg-gray-100 m-4 w-4/5">
             <h2 class="text-2xl DFont p-4">
                 Query Analyticla
             </h2>                
-            <table class="h-screen w-full table-auto">
+            <table class="table-auto">
                 <thead class="text-left bg-gray-900 p-10 DColorHeader">
-                    <tr>
+                    <tr class="h-2">
                         <th class="DColorBorder border-r py-2">
                             <h2>QUERY</h2>
                         </th>
@@ -27,13 +42,35 @@
                         <th class="DColorBorder border-r py-2">
                             <h2>CTR</h2>
                         </th>
-                        <th class="py-2">
+                        <th class="DColorBorder border-r py-2 pr-4">
                             <h2 class="">SEO CAMPAIGN</h2>
                         </th>
                     </tr>
                 </thead>
-                <tbody class="p-4">
-                    <tr>
+                <tbody>
+                    <tr v-for="item in listtable">
+                        <td class="px-4">
+                            {{ item.text }}
+                        </td>
+
+                        <td class="px-4">
+                            {{ item.text2 }}
+                        </td>
+
+                        <td class="px-4">
+                            {{ item.text3 }}
+                        </td>
+
+                        <td class="px-4">
+                            {{ item.text4 }}
+                        </td>
+
+                        <td>
+                            
+                        </td>
+                    </tr>
+
+                    <!-- <tr>
                         <td>
                             <h2>tools for seo specialits</h2> 
                         </td>
@@ -100,7 +137,7 @@
                         <td>
                             <button>+ADD</button>
                         </td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
         </div>
@@ -108,7 +145,12 @@
 
 </template>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+    /* @font-face {
+        font-family: 'Quicksand', sans-serif;
+        src: url('https://teamtest.test/font/Quicksand-VariableFont_wght.ttf');
+        font-style: normal;
+        font-weight: normal;
+    } */
     .DTable{
         
     }
@@ -120,8 +162,16 @@
     .DTable table thead th:first-child h2{
         @apply border-l-0;
     }
+    
+    .DTable table tbody tr{
+        @apply border-b-2;
+    }
+    
+    .DTable table tbody tr:last-child{
+        @apply border-b-0;
+    }
 
-    .DTable table tbody td:last-child button{
+    .DTable table tbody td button{
         @apply hover:bg-gray-200 transition ease-in-out duration-200;
     }
 

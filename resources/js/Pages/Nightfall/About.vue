@@ -40,7 +40,7 @@ function CambiarIdioma(str) {
     <Button class="m-2" color="green">PrimaryButton2</Button>
     <h4 class="text-sm m-4" v-if="listItem.length">Catidad de parrafos {{ listItem.length }}</h4>
 
-    <Table> Hi </Table>
+    <Table > Hi </Table>
 
     <ListaParagraph :list="listItem">
     </ListaParagraph>
