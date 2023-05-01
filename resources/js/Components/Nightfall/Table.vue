@@ -34,32 +34,72 @@
                 </thead>
                 <tbody class="p-4">
                     <tr>
-                        <td>tools for seo specialits</td>
-                        <td>235</td>
-                        <td>1200</td>
-                        <td>16.5%</td>
-                        <td>ADD</td>
+                        <td>
+                            <h2>tools for seo specialits</h2> 
+                        </td>
+                        <td>
+                            <h2>235</h2> 
+                        </td>
+                        <td>
+                            <h2>1200</h2>
+                        </td>
+                        <td>
+                            <h2>16.5%</h2>
+                        </td>
+                        <td>
+                            <button>+ADD</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td>best seo tools</td>
-                        <td>217</td>
-                        <td>950</td>
-                        <td>18.2%</td>
-                        <td>ADD</td>
+                        <td>
+                            <h2>best seo tools</h2>
+                        </td>
+                        <td>
+                            <h2>217</h2>
+                        </td>
+                        <td>
+                            <h2>950</h2>
+                        </td>
+                        <td>
+                            <h2>18.2%</h2>
+                        </td>
+                        <td>
+                            <button>+ADD</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td>seo competitors</td>
-                        <td>197</td>
-                        <td>603</td>
-                        <td>14.1%</td>
-                        <td>ADD</td>
+                        <td>
+                            <h2>seo competitors</h2>
+                        </td>
+                        <td>
+                            <h2>197</h2>
+                        </td>
+                        <td>
+                            <h2>603</h2>
+                        </td>
+                        <td>
+                            <h2>14.1%</h2>
+                        </td>
+                        <td>
+                            <button>+ADD</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td>comprehensive seo tools</td>
-                        <td>130</td>
-                        <td>548</td>
-                        <td>19.8%</td>
-                        <td>ADD</td>
+                        <td>
+                            <h2>comprehensive seo tools</h2>
+                        </td>
+                        <td>
+                            <h2>130</h2>
+                        </td>
+                        <td>
+                            <h2>548</h2>
+                        </td>
+                        <td>
+                            <h2>19.8%</h2>
+                        </td>
+                        <td>
+                            <button>+ADD</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -80,6 +120,11 @@
     .DTable table thead th:first-child h2{
         @apply border-l-0;
     }
+
+    .DTable table tbody td:last-child button{
+        @apply hover:bg-gray-200 transition ease-in-out duration-200;
+    }
+
     .DFont{
         font-family: 'Quicksand', sans-serif;
     }
