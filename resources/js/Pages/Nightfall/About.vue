@@ -3,6 +3,7 @@ import ListaParagraph from './ListParagraph.vue';
 import Button from '@/Components/PrimaryButton.vue'
 import { ref } from 'vue';
 import Table from '@/Components/Nightfall/Table.vue';
+import DTable from '@/Pages/Nightfall/Table.vue';
 
 const props = defineProps({
     description: String,
@@ -36,11 +37,41 @@ function CambiarIdioma(str) {
     <button class="cursor-pointer bg-green-600 p-2 rounded m-4 text-white" @click="CambiarIdioma('en')">
         Cambiar Idioma a Ingles
     </button>
-    <Button class="m-2" >PrimaryButton1</Button>
+    <Button class="m-2">PrimaryButton1</Button>
     <Button class="m-2" color="green">PrimaryButton2</Button>
     <h4 class="text-sm m-4" v-if="listItem.length">Catidad de parrafos {{ listItem.length }}</h4>
 
     <Table > Hi </Table>
+
+    <DTable > 
+        <template #title>
+            Mi tabla, Tabla de Dricc, Don't touch me!
+        </template>
+        <template #header>
+            <tr>
+                <th class="border border-stone-600 text-center w-12">No.</th>
+                <th class="border border-stone-600 text-left">Name</th>
+            </tr>
+        </template>
+
+        <tr>
+            <td class="border border-stone-600 text-center">1</td>
+            <td class="border border-stone-600">Dairon</td>
+        </tr>
+        <tr>
+            <td class="border border-stone-600 text-center">2</td>
+            <td class="border border-stone-600">Nightfall</td>
+        </tr>
+        <tr>
+            <td class="border border-stone-600 text-center">3</td>
+            <td class="border border-stone-600">Roxi</td>
+        </tr>
+        <tr>
+            <td class="border border-stone-600 text-center">4</td>
+            <td class="border border-stone-600">Diego</td>
+        </tr>
+
+    </DTable>
 
     <ListaParagraph :list="listItem">
     </ListaParagraph>
