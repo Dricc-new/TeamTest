@@ -2,6 +2,7 @@
 import ListaParagraph from './ListParagraph.vue';
 import Button from '@/Components/PrimaryButton.vue'
 import { ref } from 'vue';
+import Table from '@/Components/Nightfall/Table.vue';
 
 const props = defineProps({
     description: String,
@@ -38,6 +39,9 @@ function CambiarIdioma(str) {
     <Button class="m-2" >PrimaryButton1</Button>
     <Button class="m-2" color="green">PrimaryButton2</Button>
     <h4 class="text-sm m-4" v-if="listItem.length">Catidad de parrafos {{ listItem.length }}</h4>
+
+    <Table> Hi </Table>
+
     <ListaParagraph :list="listItem">
     </ListaParagraph>
 </template>
