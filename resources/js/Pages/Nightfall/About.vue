@@ -1,6 +1,6 @@
 <script setup>
 import ListaParagraph from './ListParagraph.vue';
-import Button from '@/Components/PrimaryButton.vue'
+import Button from '@/Components/PrimaryButton.vue';
 import { ref } from 'vue';
 import Table from '@/Components/Nightfall/Table.vue';
 import DTable from '@/Pages/Nightfall/Table.vue';
@@ -43,7 +43,7 @@ function CambiarIdioma(str) {
 
     <Table > Hi </Table>
 
-    <DTable > 
+    <DTable>
         <template #title>
             Mi tabla, Tabla de Dricc, Don't touch me!
         </template>

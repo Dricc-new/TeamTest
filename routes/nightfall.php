@@ -33,3 +33,8 @@ Route::get('about', function(){
     ];
     return Inertia::render('Nightfall/About',compact('description','listItem'));
 })->name('about');
+
+
+Route::get('test', function(){
+    return Inertia::render('Nightfall/Themes/Alerts/Theme');
+});
